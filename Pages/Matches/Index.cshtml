@@ -1,0 +1,72 @@
+﻿@page
+@model Proiect_Medii.Pages.Matches.IndexModel
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-page="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Match[0].Date)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Match[0].Location)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Match[0].HomeTeam)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Match[0].AwayTeam)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Match[0].HomeScore)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Match[0].AwayScore)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.Match)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Date)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Location)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.HomeTeam)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.AwayTeam)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.HomeScore)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.AwayScore)
+                </td>
+                <td>
+                    <a asp-page="./Edit" asp-route-id="@item.ID">Edit</a> |
+                    <a asp-page="./Details" asp-route-id="@item.ID">Details</a> |
+                    <a asp-page="./Delete" asp-route-id="@item.ID">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+@if (!User.Identity.IsAuthenticated)
+{
+    <p class="text-danger">Această pagină este vizibilă doar utilizatorilor autentificați!</p>
+}

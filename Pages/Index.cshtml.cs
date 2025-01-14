@@ -1,5 +1,4 @@
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.RazorPages;
+﻿using Microsoft.AspNetCore.Mvc.RazorPages;
 
 namespace Proiect_Medii.Pages
 {
@@ -14,7 +13,7 @@ namespace Proiect_Medii.Pages
 
         public void OnGet()
         {
-
+            // Dashboard accesibil tuturor utilizatorilor
         }
     }
 }

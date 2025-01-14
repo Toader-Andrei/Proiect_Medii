@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.11.35327.3
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Proiect Medii", "Proiect Medii.csproj", "{B47E8B96-48D5-47E4-8660-B3932D5D837D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Proiect Medii", "Proiect Medii.csproj", "{B47E8B96-48D5-47E4-8660-B3932D5D837D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FootballTeamMobileApp", "..\..\mobile\FootballTeamMobileApp\FootballTeamMobileApp.csproj", "{AE038C72-AC60-4A85-B879-F4F10D305558}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,12 @@ Global
 		{B47E8B96-48D5-47E4-8660-B3932D5D837D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B47E8B96-48D5-47E4-8660-B3932D5D837D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B47E8B96-48D5-47E4-8660-B3932D5D837D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AE038C72-AC60-4A85-B879-F4F10D305558}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE038C72-AC60-4A85-B879-F4F10D305558}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AE038C72-AC60-4A85-B879-F4F10D305558}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{AE038C72-AC60-4A85-B879-F4F10D305558}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AE038C72-AC60-4A85-B879-F4F10D305558}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AE038C72-AC60-4A85-B879-F4F10D305558}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
